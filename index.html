@@ -193,6 +193,11 @@
 		    padding: 4px 8px;
 		    border-radius: 4px;
 		}
+		#paypal-container-E8YYGPAKLP3AC {
+			color: black;
+			background-color: white;
+			max-width: 500px;
+		}
     </style>
 
 </head>
@@ -342,8 +347,16 @@
 	
 	<br><br>
 	
-    <h2 class="section-title">Want to invest, donate, or support us any other way?</h2>
+    
     <p class="about">
+		<h2 class="section-title">Want to donate?</h2>
+		<div id="paypal-container-E8YYGPAKLP3AC"></div>
+		<script>
+		  paypal.HostedButtons({
+		    hostedButtonId: "E8YYGPAKLP3AC",
+		  }).render("#paypal-container-E8YYGPAKLP3AC")
+		</script>
+		<h2>Or you want to invest, sponsor, or help some other way?</h2>
         Email us at <a href="mailto:business@thepettablesvt.com">business@thepettablesvt.com</a>
     </p>
 </section>
